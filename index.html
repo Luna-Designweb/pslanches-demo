@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS Lanches Farrula | Lanches Artesanais, Pizzas & Pub em Belford Roxo</title>
+    <meta name="description" content="PS Lanches Farrula - Lanches artesanais, pizzas e porções com o melhor custo-benefício de Belford Roxo, RJ. Peça pelo WhatsApp!">
+    <meta name="keywords" content="lanches, hambúrguer, pizza, pub, bar, delivery, Belford Roxo, PS Lanches">
+    <meta name="author" content="PS Lanches Farrula">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="PS Lanches Farrula | Lanches Artesanais em Belford Roxo">
+    <meta property="og:description" content="Lanches artesanais, pizzas e porções com o melhor custo-benefício de Belford Roxo. Peça pelo WhatsApp!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1200&q=80">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://pslanchesfarrula.com.br/">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "PS Lanches Farrula",
+        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&q=80",
+        "description": "Lanches artesanais, pizzas e porções com o melhor custo-benefício de Belford Roxo, RJ.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Estrada Dr. Farrula, 200",
+            "addressLocality": "Belford Roxo",
+            "addressRegion": "RJ",
+            "postalCode": "26125-400",
+            "addressCountry": "BR"
+        },
+        "telephone": "+5521998546418",
+        "priceRange": "$",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "7"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "19:00",
+                "closes": "01:00"
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Skip to content -->
+    <a href="#inicio" class="skip-link">Pular para o conteúdo</a>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="#inicio" class="header__logo" aria-label="PS Lanches - Início">
+                <span class="header__logo-icon">PS</span>
+                <span class="header__logo-text">Lanches</span>
+            </a>
+
+            <nav class="header__nav" id="mainNav" aria-label="Navegação principal">
+                <ul class="header__menu">
+                    <li><a href="#inicio" class="header__link header__link--active" data-section="inicio">Início</a></li>
+                    <li><a href="#cardapio" class="header__link" data-section="cardapio">Cardápio</a></li>
+                    <li><a href="#sobre" class="header__link" data-section="sobre">Sobre</a></li>
+                    <li><a href="#localizacao" class="header__link" data-section="localizacao">Localização</a></li>
+                </ul>
+            </nav>
+
+            <a href="https://wa.me/5521998546418?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido!" 
+               class="header__cta btn btn--primary btn--sm" target="_blank" rel="noopener" aria-label="Peça agora pelo WhatsApp">
+                Peça Agora
+            </a>
+
+            <button class="header__hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false">
+                <span class="header__hamburger-line"></span>
+                <span class="header__hamburger-line"></span>
+                <span class="header__hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Mobile Menu Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+        <div class="mobile-drawer__header">
+            <a href="#inicio" class="header__logo" aria-label="PS Lanches - Início">
+                <span class="header__logo-icon">PS</span>
+                <span class="header__logo-text">Lanches</span>
+            </a>
+            <button class="mobile-drawer__close" id="drawerClose" aria-label="Fechar menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <nav class="mobile-drawer__nav" aria-label="Navegação mobile">
+            <ul class="mobile-drawer__menu">
+                <li><a href="#inicio" class="mobile-drawer__link mobile-drawer__link--active" data-section="inicio">Início</a></li>
+                <li><a href="#cardapio" class="mobile-drawer__link" data-section="cardapio">Cardápio</a></li>
+                <li><a href="#sobre" class="mobile-drawer__link" data-section="sobre">Sobre</a></li>
+                <li><a href="#localizacao" class="mobile-drawer__link" data-section="localizacao">Localização</a></li>
+            </ul>
+        </nav>
+        <a href="https://wa.me/5521998546418?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido!" 
+           class="mobile-drawer__cta btn btn--primary" target="_blank" rel="noopener" aria-label="Peça pelo WhatsApp">
+            Peça pelo WhatsApp
+        </a>
+    </div>
+
+    <main>
+        <!-- ========== HERO ========== -->
+        <section class="hero" id="inicio">
+            <div class="hero__bg">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1920&q=80" 
+                     alt="Hambúrguer artesanal com ingredientes frescos" 
+                     class="hero__bg-img" fetchpriority="high">
+                <div class="hero__bg-overlay"></div>
+            </div>
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <span class="hero__badge hero__badge--anim">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFB84D" stroke="none">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        5.0 no Google &middot; Belford Roxo, RJ
+                    </span>
+                    <h1 class="hero__title hero__title--anim">Sabor Que<br>Vem Da Noite</h1>
+                    <p class="hero__subtitle hero__subtitle--anim">Lanches artesanais, pizzas e porções com o melhor custo-benefício de Belford Roxo.</p>
+                    <div class="hero__ctas hero__ctas--anim">
+                        <a href="https://wa.me/5521998546418?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido!" 
+                           class="btn btn--primary btn--lg" target="_blank" rel="noopener" aria-label="Peça pelo WhatsApp">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                            Peça pelo WhatsApp
+                        </a>
+                        <a href="#cardapio" class="btn btn--secondary btn--lg">
+                            Ver Cardápio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SOBRE ========== -->
+        <section class="sobre" id="sobre">
+            <div class="container">
+                <div class="sobre__grid">
+                    <div class="sobre__content reveal">
+                        <span class="section-label">Quem Somos</span>
+                        <h2 class="section-title">Um Lugar Feito pra Você</h2>
+                        <p class="sobre__text">A PS Lanches nasceu na Estrada Dr. Farrula com um objetivo simples: servir lanches artesanais de qualidade a preço justo. Aqui você encontra hambúrgueres caprichados, pizzas saborosas, batatas com molhos diferenciados e um ambiente descontraído pra curtir com a galera.</p>
+                        <div class="sobre__infos">
+                            <div class="sobre__info">
+                                <div class="sobre__info-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF6B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="sobre__info-label">Endereço</span>
+                                    <span class="sobre__info-value">Estrada Dr. Farrula, 200 — Belford Roxo, RJ</span>
+                                </div>
+                            </div>
+                            <div class="sobre__info">
+                                <div class="sobre__info-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF6B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12 6 12 12 16 14"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="sobre__info-label">Horário</span>
+                                    <span class="sobre__info-value">Terça a Domingo · 19h às 01h</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sobre__visual reveal reveal-delay-2">
+                        <div class="sobre__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80" 
+                                 alt="Lanches artesanais preparados com ingredientes frescos" 
+                                 class="sobre__image" loading="lazy" width="800" height="600">
+                            <div class="sobre__image-accent"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CARDÁPIO ========== -->
+        <section class="cardapio" id="cardapio">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">Nosso Cardápio</span>
+                    <h2 class="section-title">Escolha Seu Favorito</h2>
+                </div>
+
+                <div class="cardapio__tabs reveal" role="tablist" aria-label="Categorias do cardápio">
+                    <button class="cardapio__tab cardapio__tab--active" id="tab-hamburgueres" data-category="hamburgueres" role="tab" aria-selected="true" aria-controls="panel-cardapio">Hambúrgueres</button>
+                    <button class="cardapio__tab" id="tab-pizzas" data-category="pizzas" role="tab" aria-selected="false" aria-controls="panel-cardapio">Pizzas</button>
+                    <button class="cardapio__tab" id="tab-porcoes" data-category="porcoes" role="tab" aria-selected="false" aria-controls="panel-cardapio">Porções</button>
+                    <button class="cardapio__tab" id="tab-batatas" data-category="batatas" role="tab" aria-selected="false" aria-controls="panel-cardapio">Batatas</button>
+                    <button class="cardapio__tab" id="tab-combos" data-category="combos" role="tab" aria-selected="false" aria-controls="panel-cardapio">Combos</button>
+                    <button class="cardapio__tab" id="tab-bebidas" data-category="bebidas" role="tab" aria-selected="false" aria-controls="panel-cardapio">Bebidas</button>
+                </div>
+
+                <div class="cardapio__grid" id="cardapioGrid" role="tabpanel" aria-labelledby="tab-hamburgueres">
+                    <!-- Hambúrgueres -->
+                    <article class="card card--menu reveal" data-category="hamburgueres">
+                        <div class="card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&q=80" alt="X-Picanha - hambúrguer artesanal com picanha grelhada" class="card__image" loading="lazy" width="800" height="600">
+                            <span class="card__badge card__badge--pop">Mais Pedido</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">X-Picanha</h3>
+                            <p class="card__desc">Picanha grelhada, queijo, molho especial e salada</p>
+                            <div class="card__footer">
+                                <span class="card__price">R$ 18,90</span>
+                                <a href="https://wa.me/5521998546418?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20um%20X-Picanha!" 
+                                   class="btn btn--primary btn--sm" target="_blank" rel="noopener" aria-label="Pedir X-Picanha pelo WhatsApp">
+                                    Pedir
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card card--menu reveal reveal-delay-1" data-category="hamburgueres">
+                        <div class="card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=800&q=80" alt="X-Tudo - hambúrguer completo com todos os ingredientes" class="card__image" loading="lazy" width="800" height="600">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">X-Tudo</h3>
+                            <p class="card__desc">Hambúrguer, presunto, ovo, queijo, salada e molho</p>
+                            <div class="card__footer">
+                                <span class="card__price">R$ 16,90</span>
+                                <a href="https://wa.me/5521998546418?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20um%20X-Tudo!" 
+                                   class="btn btn--primary btn--sm" target="_blank" rel="noopener" aria-label="Pedir X-Tudo pelo WhatsApp">
+                                    Pedir
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card card--menu reveal reveal-delay-2" data-category="hamburgueres">
+                        <div class="card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=800&q=80" alt="Triplo - hambúrguer triplo com bacon e queijo" class="card__image" loading="lazy" width="800" height="600">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Triplo</h3>
+                            <p class="card__desc">Três hambúrgueres, queijo, bacon e molho especial</p>
+                            <div class="card__footer">
+                                <span class="card__price">R$ 22,90</span>
+                                <a href="https://wa.me/5521998546418?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20um%20Triplo!" 
+                                   class="btn btn--primary btn--sm" target="_blank" rel="noopener" aria-label="Pedir Triplo pelo WhatsApp">
+                                    Pedir
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card card--menu reveal reveal-delay-3" data-category="hamburgueres">
+                        <div class="card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=800&q=80" alt="X-Bacon - hambúrguer com bacon crocante" class="card__image" loading="lazy" width="800" height="600">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">X-Bacon</h3>
+                            <p class="card__desc">Hambúrguer, bacon crocante, queijo e molho</p>
+                            <div class="card__footer">
+                                <span class="card__price">R$ 17,90</span>
+                                <a href="https://wa.me/5521998546418?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20um%20X-Bacon!" 
+                                   class="btn btn--primary btn--sm" target="_blank" rel="noopener" aria-label="Pedir X-Bacon pelo WhatsApp">
+                                    Pedir
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pizzas -->
+                    <article class="card card--menu reveal" data-category="pizzas" style="display:none;">
+                        <div class="card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80" alt="Pizza Margherita com molho de tomate e muçarela" class="card__image" loading="lazy" width="800" height="600">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Pizza Margherita</h3>
+                            <p class="card__desc">Molho de tomate, muçarela e manjericão</p>
+                            <div class="card__footer">
+                                <span class="card__price">R$ 35,00</span>
+                                <a href="https://wa.me/5521998546418?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20uma%20Pizza%20Margherita!" 
+                                   class="btn btn--primary btn--sm" target="_blank" rel="noopener" aria-label="Pedir Pizza Margherita pelo WhatsApp">
+                                    Pedir
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card card--menu reveal reveal-delay-1" data-category="pizzas" style="display:none;">
+                        <div class="card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80" alt="Pizza Calabresa com cebola e azeitona" class="card__image" loading="lazy" width="800" height="600">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Pizza Calabresa</h3>
+                            <p class="card__desc">Calabresa fatiada, cebola e azeitona</p>
+                            <div class="card__footer">
+                                <span class="card__price">R$ 32,00</span>
+                                <a href="https://wa.me/5521998546418?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20uma%20Pizza%20Calabresa!" 
+                                   class="btn btn--primary btn--sm" target="_blank" rel="noopener" aria-label="Pedir Pizza Calabresa pelo WhatsApp">
+                                    Pedir
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card card--menu reveal reveal-delay-2" data-category="pizzas" style="display:none;">
+                        <div class="card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80" alt="Pizza 4 Queijos com muçarela, provolone, parmesão e gorgonzola" class="card__image" loading="lazy" width="800" height="600">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Pizza 4 Queijos</h3>
+                            <p class="card__desc">Muçarela, provolone, parmesão e gorgonzola</p>
+                            <div class="card__footer">
+                                <span class="card__price">R$ 38,00</span>
+                                <a href="https://wa.me/5521998546418?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20uma%20Pizza%204%20Queijos!" 
+                                   class="btn btn--primary btn--sm" target="_blank" rel="noopener" aria-label="Pedir Pizza 4 Queijos pelo WhatsApp">
+                                    Pedir
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Porções -->
+                    <article class="card card--menu reveal" data-category="porcoes" style="display:none;">
+                        <div class="card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80" alt="Porção de carne seca desfiada com farofa" class="card__image" loading="lazy" width="800" height="600">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Carne Seca</h3>
+                            <p class="card__desc">Carne seca desfiada com farofa</p>
+                            <div class="card__footer">
+                                <span class="card__price">R$ 25,00</span>
+                                <a href="https://wa.me/5521998546418?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20uma%20Por%C3%A7%C3%A3o%20de%20Carne%20Seca!" 
+                                   class="btn btn--primary btn--sm" target="_blank" rel="noopener" aria-label="Pedir Carne Seca pelo WhatsApp">
+                                    Pedir
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card card--menu reveal reveal-delay-1" data-category="porcoes" style="display:none;">
+                        <div class="card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80" alt="Porção de frango temperado com legumes" class="card__image" loading="lazy" width="800" height="600">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Porção de Frango</h3>
+                            <p class="card__desc">Frango temperado com legumes</p>
+                            <div class="card__footer">
+                                <span class="card__price">R$ 22,00</span>
+                                <a href="https://wa.me/5521998546418?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20uma%20Por%C3%A7%C3%A3o%20de%20Frango!" 
+                                   class="btn btn--primary btn--sm" target="_blank" rel="noopener" aria-label="Pedir Porção de Frango pelo WhatsApp">
+                                    Pedir
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Batatas -->
+                    <article class="card card--menu reveal" data-category="batatas" style="display:none;">
+                        <div class="card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=800&q=80" alt="Batata frita crocante com molho" class="card__image" loading="lazy" width="800" height="600">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Batata Simples</h3>
+                            <p class="card__desc">Batata frita crocante com molho</p>
+                            <div class="card__footer">
+                                <span class="card__price">R$ 12,00</span>
+                                <a href="https://wa.me/5521998546418?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20uma%20Batata%20Simples!" 
+                                   class="btn btn--primary btn--sm" target="_blank" rel="noopener" aria-label="Pedir Batata Simples pelo WhatsApp">
+                                    Pedir
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card card--menu reveal reveal-delay-1" data-category="batatas" style="display:none;">
+                        <div class="card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=800&q=80" alt="Batata frita com cheddar derretido" class="card__image" loading="lazy" width="800" height="600">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Batata com Cheddar</h3>
+                            <p class="card__desc">Batata frita com cheddar derretido</p>
+                            <div class="card__footer">
+                                <span class="card__price">R$ 15,00</span>
+                                <a href="https://wa.me/5521998546418?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20uma%20Batata%20com%20Cheddar!" 
+                                   class="btn btn--primary btn--sm" target="_blank" rel="noopener" aria-label="Pedir Batata com Cheddar pelo WhatsApp">
+                                    Pedir
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card card--menu reveal reveal-delay-2" data-category="batatas" style="display:none;">
+                        <div class="card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=800&q=80" alt="Batata frita com bacon e queijo" class="card__image" loading="lazy" width="800" height="600">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Batata com Bacon</h3>
+                            <p class="card__desc">Batata frita com bacon e queijo</p>
+                            <div class="card__footer">
+                                <span class="card__price">R$ 17,00</span>
+                                <a href="https://wa.me/5521998546418?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20uma%20Batata%20com%20Bacon!" 
+                                   class="btn btn--primary btn--sm" target="_blank" rel="noopener" aria-label="Pedir Batata com Bacon pelo WhatsApp">
+                                    Pedir
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Combos -->
+                    <article class="card card--menu reveal" data-category="combos" style="display:none;">
+                        <div class="card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&q=80" alt="Combo Individual com hambúrguer batata e molho" class="card__image" loading="lazy" width="800" height="600">
+                            <span class="card__badge card__badge--value">Econômico</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Combo Individual</h3>
+                            <p class="card__desc">Hambúrguer + batata + molho</p>
+                            <div class="card__footer">
+                                <span class="card__price">R$ 24,90</span>
+                                <a href="https://wa.me/5521998546418?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20um%20Combo%20Individual!" 
+                                   class="btn btn--primary btn--sm" target="_blank" rel="noopener" aria-label="Pedir Combo Individual pelo WhatsApp">
+                                    Pedir
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card card--menu reveal reveal-delay-1" data-category="combos" style="display:none;">
+                        <div class="card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&q=80" alt="Combo para 2 pessoas com dois hambúrgueres e batata" class="card__image" loading="lazy" width="800" height="600">
+                            <span class="card__badge card__badge--pop">Mais Pedido</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Combo Para 2</h3>
+                            <p class="card__desc">2 hambúrgueres + batata grande + 2 molhos</p>
+                            <div class="card__footer">
+                                <span class="card__price">R$ 42,90</span>
+                                <a href="https://wa.me/5521998546418?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20um%20Combo%20Para%202!" 
+                                   class="btn btn--primary btn--sm" target="_blank" rel="noopener" aria-label="Pedir Combo Para 2 pelo WhatsApp">
+                                    Pedir
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Bebidas -->
+                    <article class="card card--menu reveal" data-category="bebidas" style="display:none;">
+                        <div class="card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=800&q=80" alt="Refrigerante lata Coca-Cola Guaraná ou Sprite" class="card__image" loading="lazy" width="800" height="600">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Refrigerante Lata</h3>
+                            <p class="card__desc">Coca-Cola, Guaraná ou Sprite</p>
+                            <div class="card__footer">
+                                <span class="card__price">R$ 5,00</span>
+                                <a href="https://wa.me/5521998546418?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20um%20Refrigerante%20Lata!" 
+                                   class="btn btn--primary btn--sm" target="_blank" rel="noopener" aria-label="Pedir Refrigerante Lata pelo WhatsApp">
+                                    Pedir
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card card--menu reveal reveal-delay-1" data-category="bebidas" style="display:none;">
+                        <div class="card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=800&q=80" alt="Sucos naturais de laranja limão ou maracujá" class="card__image" loading="lazy" width="800" height="600">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Sucos Naturais</h3>
+                            <p class="card__desc">Laranja, limão ou maracujá</p>
+                            <div class="card__footer">
+                                <span class="card__price">R$ 7,00</span>
+                                <a href="https://wa.me/5521998546418?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20um%20Suco%20Natural!" 
+                                   class="btn btn--primary btn--sm" target="_blank" rel="noopener" aria-label="Pedir Suco Natural pelo WhatsApp">
+                                    Pedir
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card card--menu reveal reveal-delay-2" data-category="bebidas" style="display:none;">
+                        <div class="card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=800&q=80" alt="Água mineral 500ml" class="card__image" loading="lazy" width="800" height="600">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Água</h3>
+                            <p class="card__desc">Mineral 500ml</p>
+                            <div class="card__footer">
+                                <span class="card__price">R$ 3,00</span>
+                                <a href="https://wa.me/5521998546418?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20uma%20%C3%81gua!" 
+                                   class="btn btn--primary btn--sm" target="_blank" rel="noopener" aria-label="Pedir Água pelo WhatsApp">
+                                    Pedir
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="cardapio__cta reveal">
+                    <a href="https://wa.me/5521998546418?text=Ol%C3%A1!%20Vim%20pelo%20card%C3%A1pio%20e%20gostaria%20de%20fazer%20um%20pedido!" 
+                       class="btn btn--primary btn--lg" target="_blank" rel="noopener" aria-label="Peça pelo WhatsApp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        Peça pelo WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== DIFERENCIAIS ========== -->
+        <section class="diferenciais" id="diferenciais">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">Por Que a PS Lanches?</span>
+                    <h2 class="section-title">Por Que a Gente Se Diferencia</h2>
+                </div>
+                <div class="diferenciais__grid">
+                    <div class="card card--diferencial reveal">
+                        <div class="card__icon">&#127828;</div>
+                        <h3 class="card__title">Feito com Carinho</h3>
+                        <p class="card__desc">Cada lanche é preparado na hora, com ingrediente fresco e muito capricho.</p>
+                    </div>
+                    <div class="card card--diferencial reveal reveal-delay-1">
+                        <div class="card__icon">&#128176;</div>
+                        <h3 class="card__title">Custo-Benefício</h3>
+                        <p class="card__desc">Preço justo, sabor real. Não precisa gastar uma fortuna pra comer bem.</p>
+                    </div>
+                    <div class="card card--diferencial reveal reveal-delay-2">
+                        <div class="card__icon">&#11088;</div>
+                        <h3 class="card__title">Nota 5.0</h3>
+                        <p class="card__desc">Avaliação perfeita no Google. Nossos clientes confiam e voltam sempre.</p>
+                    </div>
+                    <div class="card card--diferencial reveal reveal-delay-3">
+                        <div class="card__icon">&#128663;</div>
+                        <h3 class="card__title">Delivery Rápido</h3>
+                        <p class="card__desc">Peça pelo WhatsApp, retire na loja ou receba em casa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== AVALIAÇÕES ========== -->
+        <section class="avaliacoes" id="avaliacoes">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">O Que Dizem Nossos Clientes</span>
+                    <h2 class="section-title">Avaliações Que Falam Por Nós</h2>
+                    <div class="avaliacoes__rating">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFB84D" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                        <span><strong>5.0</strong> de 5 &middot; 7 avaliações no Google</span>
+                    </div>
+                </div>
+
+                <div class="avaliacoes__grid">
+                    <article class="card card--avaliacao reveal">
+                        <div class="card__quote">&ldquo;</div>
+                        <p class="card__review">Me surpreendi com a qualidade, aparência e atendimento.</p>
+                        <div class="card__author">
+                            <div class="card__author-avatar">P</div>
+                            <div>
+                                <span class="card__author-name">Pablo Souza Rangel</span>
+                                <div class="card__stars">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB84D" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB84D" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB84D" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB84D" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB84D" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card card--avaliacao reveal reveal-delay-1">
+                        <div class="card__quote">&ldquo;</div>
+                        <p class="card__review">Hambúrguer bem caprichado e batata bem gostosa junto com os molhos.</p>
+                        <div class="card__author">
+                            <div class="card__author-avatar">J</div>
+                            <div>
+                                <span class="card__author-name">Joao Victor</span>
+                                <div class="card__stars">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB84D" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB84D" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB84D" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB84D" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB84D" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card card--avaliacao reveal reveal-delay-2">
+                        <div class="card__quote">&ldquo;</div>
+                        <p class="card__review">O X-picanha é bom e barato. O triplo é o da foto e dispensa apresentação. Super recomendo.</p>
+                        <div class="card__author">
+                            <div class="card__author-avatar">P</div>
+                            <div>
+                                <span class="card__author-name">Pablo Souza Rangel</span>
+                                <div class="card__stars">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB84D" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB84D" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB84D" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB84D" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB84D" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="avaliacoes__cta reveal">
+                    <a href="https://search.google.com/local/writereview?placeid=0x9967dc42a32893%3A0xf50ed5f07c92a907" 
+                       class="btn btn--secondary" target="_blank" rel="noopener" aria-label="Ver todas as avaliações no Google">
+                        Ver todas as avaliações no Google
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                            <polyline points="12 5 19 12 12 19"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== LOCALIZAÇÃO ========== -->
+        <section class="localizacao" id="localizacao">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">Onde Estamos</span>
+                    <h2 class="section-title">Visite a PS Lanches</h2>
+                </div>
+                <div class="localizacao__grid">
+                    <div class="localizacao__map reveal">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.47!2d-43.407421!3d-22.734953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9967dc42a32893%3A0xf50ed5f07c92a907!2sPS%20Lanches!5e0!3m2!1spt-BR!2sbr" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0; border-radius: 16px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Localização da PS Lanches no Google Maps">
+                        </iframe>
+                    </div>
+                    <div class="localizacao__info reveal reveal-delay-2">
+                        <div class="localizacao__detail">
+                            <div class="localizacao__detail-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF6B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="localizacao__detail-title">Endereço</h3>
+                                <p class="localizacao__detail-text">Estrada Dr. Farrula, 200<br>São Francisco de Assis<br>Belford Roxo, RJ — CEP 26125-400</p>
+                            </div>
+                        </div>
+                        <div class="localizacao__detail">
+                            <div class="localizacao__detail-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF6B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="localizacao__detail-title">Horário</h3>
+                                <p class="localizacao__detail-text">Terça a Domingo<br>19h às 01h<br><span class="localizacao__closed">Segunda: Fechado</span></p>
+                            </div>
+                        </div>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=PS+Lanches+Estrada+Dr+Farrula+200+Belford+Roxo+RJ" 
+                           class="btn btn--secondary btn--lg" target="_blank" rel="noopener" aria-label="Abrir localização no Google Maps">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            Abrir no Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== FAQ ========== -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">Perguntas Frequentes</span>
+                    <h2 class="section-title">Tudo Que Você Precisa Saber</h2>
+                </div>
+                <div class="faq__list reveal">
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Vocês fazem delivery?</span>
+                            <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Sim! Pedidos pelo WhatsApp com retirada no local. Consulte disponibilidade de entrega na região.</p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Quais formas de pagamento?</span>
+                            <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Aceitamos cartões de crédito. Consulte também sobre outras formas no WhatsApp.</p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Qual o horário?</span>
+                            <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Terça a Domingo, das 19h às 01h. Segunda-feira fechado.</p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Tem estacionamento?</span>
+                            <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Consulte disponibilidade de vagas na região diretamente conosco pelo WhatsApp.</p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Posso pedir pelo WhatsApp?</span>
+                            <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Claro! É o jeito mais fácil. Clique no botão verde e faça seu pedido.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CTA FINAL ========== -->
+        <section class="cta-final" id="cta-final">
+            <div class="container">
+                <div class="cta-final__content reveal">
+                    <h2 class="cta-final__title">Bateu a Fome?</h2>
+                    <p class="cta-final__subtitle">Peça agora pelo WhatsApp e receba em casa ou retire na loja!</p>
+                    <a href="https://wa.me/5521998546418?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido!" 
+                       class="btn btn--white btn--lg" target="_blank" rel="noopener" aria-label="Peça pelo WhatsApp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        Peça pelo WhatsApp
+                    </a>
+                    <span class="cta-final__info">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        Estrada Dr. Farrula, 200 &middot; Belford Roxo, RJ
+                    </span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#inicio" class="footer__logo">
+                        <span class="footer__logo-icon">PS</span>
+                        <span class="footer__logo-text">Lanches</span>
+                    </a>
+                    <p class="footer__tagline">Lanches Artesanais &middot; Pizzas &middot; Pub & Bar</p>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__col-title">Navegação</h4>
+                    <ul class="footer__links">
+                        <li><a href="#inicio" class="footer__link">Início</a></li>
+                        <li><a href="#cardapio" class="footer__link">Cardápio</a></li>
+                        <li><a href="#sobre" class="footer__link">Sobre</a></li>
+                        <li><a href="#localizacao" class="footer__link">Localização</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__col-title">Contato</h4>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="tel:+5521998546418" class="footer__link footer__link--with-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                                (21) 99854-6418
+                            </a>
+                        </li>
+                        <li>
+                            <span class="footer__link footer__link--with-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                Estrada Dr. Farrula, 200
+                            </span>
+                        </li>
+                        <li>
+                            <span class="footer__link footer__link--with-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                Terça–Domingo · 19h–01h
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__col-title">Redes</h4>
+                    <div class="footer__social">
+                        <a href="https://www.instagram.com/ps__lanches" class="footer__social-link" target="_blank" rel="noopener" aria-label="Siga-nos no Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/5521998546418" class="footer__social-link footer__social-link--wa" target="_blank" rel="noopener" aria-label="Fale conosco no WhatsApp">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 PS Lanches. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== WHATSAPP FLUTUANTE ========== -->
+    <a href="https://wa.me/5521998546418?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido!" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener" 
+       aria-label="Peça pelo WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
